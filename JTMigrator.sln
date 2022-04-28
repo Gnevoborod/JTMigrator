@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JTMigrator", "JTMigrator\JTMigrator.csproj", "{BD2AC053-5010-4554-A19F-0E7534390AF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD2AC053-5010-4554-A19F-0E7534390AF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2AC053-5010-4554-A19F-0E7534390AF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2AC053-5010-4554-A19F-0E7534390AF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD2AC053-5010-4554-A19F-0E7534390AF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37B7FE03-ACA5-4D9C-B930-26825CEAAF0E}
+	EndGlobalSection
+EndGlobal
