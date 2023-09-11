@@ -9,8 +9,8 @@ namespace JTMigrator
     internal class GetTasksFromITOne
     {
         string sITOneEndPoint = "https://oneproject.it-one.ru/jira/rest/api/latest/issue/CUR-";
-        int iStartTaskNumber = 4;
-        int iEndTaskNumber = 6;
+        int iStartTaskNumber =// 205;
+        int iEndTaskNumber =// 209;
         HttpClient client = new HttpClient();
         public bool isOk = true;
         public List<TaskToClone> tasks = new List<TaskToClone>();
@@ -23,7 +23,7 @@ namespace JTMigrator
             {
                 httpRequestMessage = new HttpRequestMessage();
                 httpRequestMessage.RequestUri = new Uri(sITOneEndPoint + i.ToString());
-                httpRequestMessage.Headers.Add("Cookie", "atlassian.xsrf.token=BXQZ-C67O-KVR0-SWI7_d05cbacfcb8b39ab76e41bf926fd5be988f57a67_lin; JSESSIONID=0CD6F4296B59FBDFE1E9DDA0FBA93F71; jira.editor.user.mode=wysiwyg; _ym_uid=1645705398790172598; _ym_d=1650971296; _fbp=fb.1.1650971296721.450619859; JSESSIONID=3B9FC0ED21DBB3F4BF249A393579EB6B; PHPSESSID=wSb5xb16X2VtqrhUyPh1Ca7C1G2oee5c; crowd.token_key=4YAXbmJ3HbKOVPPSeIPFvAAAAAAACoAFcGRvcm9raG92; com.luxoft.saml.autologin=true; XSRF-TOKEN=e3093560-102c-44fe-be84-d923b8656cee");   
+                httpRequestMessage.Headers.Add("Cookie", "jira.editor.user.mode=wysiwyg; JSESSIONID=EE038B5BA7E2AFB203AEFAB2A41C7E33; atlassian.xsrf.token=BXQZ-C67O-KVR0-SWI7_42b6d43202162b25b5802b91444d525ea4edae3e_lin; _ym_uid=1645705398790172598; _ym_d=1650971296; _fbp=fb.1.1650971296721.450619859; JSESSIONID=D4E9077757177F4FC476D5FEAD610D97; PHPSESSID=wSb5xb16X2VtqrhUyPh1Ca7C1G2oee5c; XSRF-TOKEN=9fee9cd6-9691-4bc6-967a-427d4d7a6a7e; crowd.token_key=dn3BzllalIskNXdzCm79lQAAAAAACoAFcGRvcm9raG92; com.luxoft.saml.autologin=true");   
                 httpResponseMessage=client.Send(httpRequestMessage);
                 if (httpResponseMessage != null)
                 {

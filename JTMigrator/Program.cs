@@ -14,12 +14,12 @@
                 Console.WriteLine("Что-то пошло не так. См.логи.");
                 return;
             }
-            //PrintAll(getTasks.tasks);
+            PrintAll(getTasks.tasks);
             //ToDo
             Console.WriteLine("Список задач получен.\nНачинаем миграцию.");
             //ToDo
-            Migrator migrator = new Migrator(getTasks.tasks);
-            migrator.UploadTasks();
+            //Migrator migrator = new Migrator(getTasks.tasks);
+            //migrator.UploadTasks();
         }
 
         public static void PrintAll(List<TaskToClone> tasks)
